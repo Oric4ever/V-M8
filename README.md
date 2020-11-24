@@ -13,11 +13,14 @@ Architecture:
 
 The prototype has an ATmega162 in standard DIP package, it can be built on a standard prototyping board.
 
+Goal: a fully general micro-computer.
+
 There are plenty of AVR designs on the Internet, however this one has the objective to be a fully general micro-computer, when nearly all of the others are designs of embedded systems or game-consoles. This means that this V-M8 computer runs an operating system and associated environment development whereas all the other designs are programmed using development tools on PCs (either running MacOSX/Windows/Linux).
 
 Due to the modified Harvard architecture, the V-M8 computer only runs native code from its integrated flash eprom. So, the rom typically contains code for a virtual machine (hence the V-M8 name). Currently, a few personalities have been programmed: a 6502 emulator, a 8080 and Z80 emulators running CP/M, and more recently a Modula-2 virtual machine allowing to run the Turbo Modula-2 Reloaded system (see companion repository).
 
 TODO:
-- currently the prototype has no video capability, so the V-M8 computer needs a serial terminal. In a quest of minimalism, I would like to implement the video output with a small CPLD (such as an XC9536). For now, the prototype runs very satisfactorily with different
+- currently the prototype has no video capability, so the V-M8 computer needs a serial terminal. For now, the prototype runs very satisfactorily with different types of "terminals": Linux PCs, Raspberrys, Android tablets (by attaching an HC05 bluetooth module on the V-M8). But I would like the V-M8 to be fully independent of such a powerful terminal, and thus have an objective of implementing the video output with a small CPLD (such as an XC9536). 
+- the audio part hasn't been fully implemented (capacitors and resistors for the line impedance), and the audio firmware hasn't been written yet. I intend to provide a simple interrupt driven output on the PWM registers...
 
 
