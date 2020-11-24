@@ -11,7 +11,7 @@ Architecture:
 - serial port for VT100/ANSI/Xterm terminal
 - PS/2 keyboard port
 
-The prototype has an ATmega162 in DIP package, it has been built on a standard prototyping board. Here you will find Eagle schematics of the V-M8 prototype, PCB schematics haven't been drawed yet.
+The prototype has an ATmega162 in DIP package, it has been built on a standard prototyping board, and has been running for two years now. Schematics were initially drawed by hand, so I have added some uncomplete Eagle schematics here just to give an idea of the simplicity of the design (some details are missing, such as the interfacing of the SD card : I used a small module featuring a LVC125A chip). Full PCB schematics haven't been drawed yet.
 
 Goal: a fully general micro-computer.
 
